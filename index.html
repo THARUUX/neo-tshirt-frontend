@@ -1,0 +1,409 @@
+<!--  DEVELOPED AND DESIGNED BY THARUUX -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM T-SHIRTS</title>
+
+    <link rel="shortcut icon" href="Images/neologo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+    <script src="BKENDJS/main.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="JS/node_modules/atropos/atropos.css">
+
+
+</head>
+<body>
+
+    <div class="loading" style="width: 100vw; height: 100vh;">
+        <div class="wrapper">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="shadow"></span>
+            <span class="shadow"></span>
+            <span class="shadow"></span>
+        </div>
+        <div class="divContainer w-100 d-flex justify-content-center">
+            <div class="div align-items-center">Custom T-Shirts LK</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.loading').style.display = "none";
+        });
+
+        $(document).ready(function() {
+    $('.loading').css('display', '');
+    $('#content').css('display', 'none');
+
+    setTimeout(function() {
+        $('.loading').css('display', 'none');
+        $('#content').css('display', '');
+    }, 2000); 
+});
+
+    </script>
+    
+
+    <style>
+        .wrapper{
+    width:200px;
+    height:60px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    width:20px;
+    height:20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d32121;
+    left:15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+    0%{
+        top:60px;
+        height:5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+    40%{
+        height:20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100%{
+        top:0%;
+    }
+}
+.circle:nth-child(2){
+    left:45%;
+    animation-delay: .2s;
+}
+.circle:nth-child(3){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.shadow{
+    width:20px;
+    height:4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top:62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left:15%;
+    filter: blur(1px);
+    animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+    0%{
+        transform: scaleX(1.5);
+    }
+    40%{
+        transform: scaleX(1);
+        opacity: .7;
+    }
+    100%{
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+.shadow:nth-child(4){
+    left: 45%;
+    animation-delay: .2s
+}
+.shadow:nth-child(5){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+
+.divContainer{
+    width: 100%;
+    display: flex;
+}
+.div {
+    font-family: 'Calibri';
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    left:15%;
+    font-weight: 900;
+    text-align:center;
+    margin-top:5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+    </style>
+
+    <div class="content" id="content">
+
+    <!-- Navbar -->
+    <nav class="container-fluid bg-light">
+        <div class="head w-100 d-flex flex-column justify-content-center align-items-center pt-4 pb-3 animate__animated animate__fadeInDown">
+            <div class="h2 text-danger">CUSTOM T-SHIRTS LK</div>
+            <p class="text-main-2">Powered by Neo Graphics</p>
+        </div>
+        <div class="child mb-3 container-fluid d-flex ">
+            <ul class="list-group list-group-horizontal w-50 animate__animated animate__fadeInLeft">
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="#section-three">Products</a>
+                </li>
+            </ul>
+            <div class="button  w-50 d-flex justify-content-end animate__animated animate__fadeInRight">
+                <button type="button" class="btn btn-sm border border-danger text-danger rounded-0" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-flex" id="cart">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">CART</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column" style="max-height: 75vh; overflow-y: auto; padding-bottom: 100%;" id="item-list">
+
+
+        
+            </div>
+            <div class="d-flex align-self-end justify-content-center">
+                <button type="button" id="checkout-btn" onclick="checkout()" style="border: 2px solid ;width: 90%;" class="btn rounded-pill">CHECKOUT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-one animate__animated animate__fadeIn">
+        <div class="sect-one-content d-flex align-items-center">
+            <div class="cont ms-5 animate__animated animate__fadeInLeft">
+                <div class="h1">
+                    Customize T-Shirts <br> with any design and colours.
+                </div>
+                <a href="#section-three">
+                    <div class="btn">SHOP NOW</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--<div class="section-two animate__animated animate__fadeIn">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="myCarousel" class="carousel slide shadow-lg rounded" data-ride="carousel">
+                
+                    <div class="carousel-inner">
+                
+                      <div class="item active">
+                        <img src="Images/anime_tshirt.webp" alt="Anime" style="width:100%;">
+                        <div class="carousel-caption">
+                          <h3>Anime Designs</h3>
+                          <p>300+ Designs for anime lovers</p>
+                        </div>
+                      </div>
+                
+                      <div class="item">
+                        <img src="Images/pets_tshirt.jpg" alt="Pets" style="width:100%;">
+                        <div class="carousel-caption">
+                          <h3>Pet Designs</h3>
+                          <p>99+ Designs for pet lovers.</p>
+                        </div>
+                      </div>
+                    
+                      <div class="item">
+                        <img src="Images/ssrco,classic_tee,mens,101010_01c5ca27c6,front_alt,square_product,600x600.u1.webp" alt="BTS" style="width:100%;">
+                        <div class="carousel-caption">
+                          <h3>BATUS Designs</h3>
+                          <p>999+ Designs for batus lovers.</p>
+                        </div>
+                      </div>
+                  
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                  
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="col-md-6 ms-0 static-img-content">
+            </div>
+        </div>
+    </div>-->
+
+    <div class="section-three pb-5" id="section-three">
+        <div class="container-fluid  mb-5 justify-content-center align-items-center animate__animated animateUp" style="display: flex;" data-aos="fade-up" data-aos-duration="1000">
+            <a>
+                <div class="btn btn-1 btn-lg">
+                    <div class="inner">
+                        <div class="front">
+                            ANIME SERIES
+                        </div>  
+                        <div class="back">
+                            <a href="product/item-one/" class="p-2">DTF</a>
+                            <a href="product/item-two/" class="p-2 disabled" title="Comming Soon!">DTG</a>
+                            <a href="" class="p-2 disabled" title="Comming Soon!">SUBLIMATION</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="btn btn-2 btn-lg">
+                    <div class="inner">
+                        <div class="front">
+                            KPOP SERIES
+                        </div>
+                        <div class="back">
+                            <a href="" class="p-2">DTF</a>
+                            <a href="" class="p-2 disabled" title="Comming Soon!">DTG</a>
+                            <a href="" class="p-2 disabled" title="Comming Soon!">SUBLIMATION</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a >
+                <div class="btn btn-1 btn-lg">
+                    <div class="inner">
+                        <div class="front">
+                            PET SERIES
+                        </div>
+                        <div class="back">
+                            <a href="product/item-three/index.html" class="p-2">DTF</a>
+                            <a href="" class="p-2 disabled" title="Comming Soon!">DTG</a>
+                            <a href="" class="p-2 disabled" title="Comming Soon!">SUBLIMATION</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a >
+                <div class="btn btn-2 btn-lg">
+                    <div class="inner">
+                        <div class="front">
+                            OTHER SERIES
+                        </div>
+                        <div class="back">
+                            <a href="product/item-four/index.html" class="p-2">SPORTS</a>
+                            <a href="product/item-five/index.html" class="p-2">AUTO</a>
+                            <a href="product/item-six/index.html" class="p-2">STREET</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--<section class="section-one-after animate__animated animate__fadeIn d-flex justify-content-center align-items-center pt-5 pb-5">
+        <div class="atropos my-atropos">
+            <div class="atropos-scale">
+                <div class="atropos-rotate">
+                    <div class="atropos-inner">
+                        <video class="video-background mx-auto rounded-3 shadow-lg" data-aos="zoom-out-up" data-aos-duration="1000" autoplay muted loop>
+                            <source src="Images/y2mate.com - Direct to Garment DTG printing  Step by Step TShirt Printing Process_1080p.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <script src="JS/node_modules/atropos/atropos.min.js"></script>
+    <script>
+    const myAtropos = Atropos({
+        el: '.my-atropos',
+        // rest of parameters
+    });
+    </script>
+
+
+    <div class="section-four d-flex align-items-center" id="section-four">
+        <div class="container shadow-md rounded-3 p-5">
+            <div class="content mb-5">
+                <div class="h2 mt-3 text-main-2"  data-aos="fade-right" data-aos-duration="1000">What is the meaning of DTF printing?</div>
+                <p  data-aos="fade-right" data-aos-duration="1000"><span class="h4">D</span>TF printing stands for Direct To Film printing. It is a heat-transfer based print process that involves printing designs onto a transfer film, which is then covered with a thermo-adhesive powder and transferred to the final substrate, such as fabric, using a heat press. DTF printing offers flexibility as it can be used with various substrates, including cotton, polyester, and their blends, regardless of their color, as it can work with white ink. DTF prints are durable, wash well, and have a soft feel, making them suitable for heavy-use items like sportswear. This printing technique is gaining popularity as an alternative to DTG (Direct to Garment) printing, especially for print-on-demand products and custom masks.</p>
+            </div>
+            <hr>
+            <div class="content mb-3">
+                <div class="h2 mt-3 text-main-2" data-aos="fade-right" data-aos-duration="1000">What is the meaning of DTG printing?</div>
+                <p data-aos="fade-right" data-aos-duration="1000"><span class="h4">D</span>TG printing stands for Direct-to-Garment printing. It is a method of apparel decoration where graphics and images are inkjet printed directly onto pre-sewn fabric products such as T-shirts, hats, hoodies, children and baby clothes, shoes, tote bags, throw pillow covers, and other items made of natural fibers like cotton, bamboo, hemp, and linen. DTG printers use aqueous textile inks (water-based chemistry) that require a unique curing process.</p>
+                <p data-aos="fade-right" data-aos-duration="1000">This printing technique is known for its ability to reproduce complex designs with a high level of detail and a wide range of colors. It’s particularly suitable for one-off items or small print runs, as it requires very little setup time compared to screen printing. DTG printing is widely used in screen-printing companies that produce higher volumes of garments for brands, sports teams, and retailers.</p>
+                <p data-aos="fade-right" data-aos-duration="1000">In contrast to screen printing, DTG printing allows for great precision in image reproduction, enabling intricate designs with multiple colors. However, it’s not as effective on polyester or poly-cotton blends as it is on natural fibers.</p>
+                <p data-aos="fade-right" data-aos-duration="1000">In summary, DTG printing is a modern, versatile, and efficient method of printing directly onto garments and other fabric products, offering high-quality, detailed, and colorful designs.</p>
+            </div>
+            <hr>
+            <div class="content mb-3">
+                <div class="h2 mt-3 text-main-2" data-aos="fade-right" data-aos-duration="1000">What is the meaning of Sublimation printing?</div>
+                <p data-aos="fade-right" data-aos-duration="1000"><span class="h4">S</span>ublimation printing is a unique process that uses high heat and pressure to transfer your design from sublimation paper directly onto your chosen product (material or fabric). The combination of pressure and heat embeds your artwork for long-lasting and vibrant results. In this process, the ink is heated until it disintegrates into the fabric, creating a seamless and durable design that will not crack or peel over time. This method is popular for customizing items such as t-shirts, mugs, and other products made of polyester or a polyester mix.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-top container-fluid"></div>
+    <footer class="">
+        <div class="footer text-main-3">
+			<div class="container-fluid" style="height: 30%;">
+                <h4 class="text-center">CUSTOM T-SHIRTS LK</h4>
+                <p class="text-center">44, Udahamulla Station Road, Nugegoda,</p>
+                <p class="text-center">Colombo, Sri Lanka.</p>
+            </div>
+		</div>
+    </footer>
+    
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
